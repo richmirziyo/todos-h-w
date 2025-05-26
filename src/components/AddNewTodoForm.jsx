@@ -22,6 +22,7 @@ export default function AddNewTodoForm() {
   const dispatch = useDispatch();
   const [addLoading, setAddLoading] = useState(false);
   const [sending, setSending] = useState(null);
+  const token = localStorage.getItem("token");
 
   console.log(sending);
 
